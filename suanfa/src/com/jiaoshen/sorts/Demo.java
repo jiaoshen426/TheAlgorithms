@@ -1,12 +1,13 @@
-package com.jiaoshen.sort;
+package com.jiaoshen.sorts;
 
 
 public class Demo {
 	public static void main(String[] args) {
 		int[] a={9,8,9,4,5,6,7};
-		quickSort(a);
-		//change(a, 0, 6);
-		show(a);
+//		quickSort(a);
+//		//change(a, 0, 6);
+//		show(a);
+
 		
 	}
 	/**
