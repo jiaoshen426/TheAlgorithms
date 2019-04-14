@@ -3,10 +3,10 @@ package com.jiaoshen.sorts;
 
 public class Demo {
 	public static void main(String[] args) {
-		int[] a={9,8,9,4,5,6,7};
-//		quickSort(a);
-//		//change(a, 0, 6);
-//		show(a);
+		int[] a={4, 23, 6, 78, 1, 54, 231, 9, 13};
+		quickSort(a);
+		//change(a, 0, 6);
+		show(a);
 
 		
 	}
@@ -59,15 +59,17 @@ public class Demo {
 			}
 		}
 		if(right != initLeftIndex){
-			change(a, initLeftIndex, right); //把汇合点和标准店互换
+			//把汇合点和标准点互换
+			change(a, initLeftIndex, right);
 		}
-		quickSortItem(a,initLeftIndex,left);
+		quickSortItem(a,initLeftIndex,left-1);
 		quickSortItem(a,left+1,initRightIndex);
 	}
 	
 	/**
 	 * 冒泡排序 : 比较耗时间
-	 * @param 数列
+	 *
+	 * @param a
 	 * @return void
 	 */
 	public static void bubbleSort(int[] a) {

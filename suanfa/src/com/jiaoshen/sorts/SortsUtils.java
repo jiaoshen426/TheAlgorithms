@@ -33,6 +33,16 @@ final  class SortsUtils {
         return v.compareTo(w) < 0;
     }
 
+    /**
+     * This method checks if first element is large then the other element
+     * @param v first element
+     * @param w second element
+     * @return true if the first element is large then the second element
+     */
+    static <T extends Comparable<T>> boolean large(T v, T w) {
+        return v.compareTo(w) > 0;
+    }
+
 
     /**
      * Just print list
